@@ -18,4 +18,13 @@ pokemon_names = [
     'Charizard',
     'Blastoise',
     'Butterfree',
+    'Beedrill',
+    'Pidgeot',
+    'Raticate',
+    'Fearow',
+    'Arbok',
+    'Raichu',
+    'Sandslash',
+    'Nidoqueen',
+    'Nidoking',
 ]

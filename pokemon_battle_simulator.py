@@ -2,8 +2,7 @@ from models import *
 from data import *
 
 def main():
-    charmander = Charmander("Charmander")
-
+    # pokemon = Pokemon()
 
     game_running = True
 
@@ -21,26 +20,43 @@ def main():
 
     # <---------- The player gives a name to the first Trainer ---------->
 
-            challenger_naam = input("Please choose a name for the challenger\n" )
+            challenger_naam = input("Please choose a name for the Challenger\n" )
             challenger = Trainer(challenger_naam)
 
     # <---------- The player gives a name to the second Trainer ---------->
 
-            opponent_naam = input("Please choose a name for the challenger\n")
+            opponent_naam = input("Please choose a name for the Opponent\n")
             opponent = Trainer(opponent_naam)
 
-    # <--------- The player gives a name to a charmander --------->
-            
-            name = str(input("Give a name to your Charmander: "))
-            charmander.nickname = name
+    # <---------- 6 Pokeball's are added to the challenger's belt ---------->
 
-            ball = Pokeball(charmander)
+            for i in range(6):
+                pokemon = Pokemon()
+                pokeball = Pokeball(pokemon)
+                challenger.takePokeball(pokeball)
 
-            challenger.takePokeball(ball)
+    # <---------- 6 Pokeball's are added to the challenger's belt ---------->
 
-            for pokeball in challenger.belt:
-                print(pokeball.charmander.nickname)
+            for i in range(6):
+                pokemon = Pokemon()
+                pokeball = Pokeball(pokemon)
+                opponent.takePokeball(pokeball)
 
+    # <---------- The challenger throws a pokeball ---------->
+
+            thrown_pokeball_c = challenger.throwPokeball()
+
+    # <---------- The opponent throws a pokeball ---------->
+
+            thrown_pokeball_o = opponent.throwPokeball()
+
+    # <---------- The challenger returns the pokeball ---------->
+
+            challenger.returnPokeball(thrown_pokeball_c)
+
+    # <---------- The opponent returns the pokeball ---------->
+
+            opponent.returnPokeball(thrown_pokeball_o)
     # <------ The charmander does its battle cry for ten times ------>
     #
     #         for i in range(10):
@@ -48,11 +64,11 @@ def main():
 
     # <------- The player can give a new name to the same charmander -------->
 
-            changename = int(input('would you like to change the name of your charmander?, 1. Yes 2. No  '))
-            if changename == 1:
-                str(input('what is the name you would like tho give: '))
-            elif changename == 2:
-                game_running = True
+            # changename = int(input('would you like to change the name of your charmander?, 1. Yes 2. No  '))
+            # if changename == 1:
+            #     str(input('what is the name you would like tho give: '))
+            # elif changename == 2:
+            #     game_running = True
 
     # <------ The player can choose to quit the game or continue ------>
 
