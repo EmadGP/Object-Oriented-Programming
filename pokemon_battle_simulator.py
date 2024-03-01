@@ -2,11 +2,6 @@ from models import *
 from data import *
 
 def main():
-<<<<<<< Updated upstream
-    charmander = Charmander("Charmander")
-
-=======
->>>>>>> Stashed changes
 
     game_running = True
     Rematch = True
@@ -25,41 +20,15 @@ def main():
 
     # <---------- The player gives a name to the first Trainer ---------->
 
-            challenger_naam = input("Please choose a name for the challenger\n" )
+            challenger_naam = input("Please choose a name for the Challenger\n" )
             challenger = Trainer(challenger_naam)
 
     # <---------- The player gives a name to the second Trainer ---------->
 
-            opponent_naam = input("Please choose a name for the challenger\n")
+            opponent_naam = input("Please choose a name for the Opponent\n")
             opponent = Trainer(opponent_naam)
 
-<<<<<<< Updated upstream
-    # <--------- The player gives a name to a charmander --------->
-            
-            name = str(input("Give a name to your Charmander: "))
-            charmander.nickname = name
-
-            ball = Pokeball(charmander)
-
-            challenger.takePokeball(ball)
-
-            for pokeball in challenger.belt:
-                print(pokeball.charmander.nickname)
-
-    # <------ The charmander does its battle cry for ten times ------>
-    #
-    #         for i in range(10):
-    #             charmander.battle_cry()
-
-    # <------- The player can give a new name to the same charmander -------->
-
-            changename = int(input('would you like to change the name of your charmander?, 1. Yes 2. No  '))
-            if changename == 1:
-                str(input('what is the name you would like tho give: '))
-            elif changename == 2:
-                game_running = True
-=======
-            print(f"{challenger.name} vs {opponent.name}")
+            print(f"{challenger.name} VS {opponent.name}")
 
     # <---------- 6 Pokeball's are added to the challenger's belt ---------->
 
@@ -112,7 +81,6 @@ def main():
                         game_running = False
                         print("Game over!")
                         quit()
->>>>>>> Stashed changes
 
     # <------ The player can choose to quit the game or continue ------>
 

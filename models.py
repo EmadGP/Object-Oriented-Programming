@@ -1,18 +1,5 @@
-<<<<<<< Updated upstream
-from data import *
-
-class Charmander:
-    def __init__(self, nickname):
-        self.nickname = nickname
-        self.strenght = "fire"
-        self.weakness = "water"
-
-    def battle_cry(self):
-        print(self.nickname + "!")
-=======
 import random
 from abc import ABC
-
 from data import *
 
 class Pokemon(ABC):
@@ -44,7 +31,6 @@ class Bulbasaur(Pokemon):
 
     def battle_cry(self):
         return print("Bulbasaur!")
->>>>>>> Stashed changes
 
 
 class Pokeball:
@@ -64,57 +50,42 @@ class Pokeball:
         if self.is_open:
             print("Pokeball closes!")
             self.is_open = False
-<<<<<<< Updated upstream
-            self.charmander = charmander
-=======
             self.pokemon = pokemon
 
->>>>>>> Stashed changes
         else:
             print("Pokeball is already closed!")
 
     def HasCharmanderInside(self):
 
-        if self.charmander:
-            self.contains_charmander = True
+        if self.pokemon:
+            self.contains_pokemon = True
             return True
 
         else:
-            self.contains_charmander = False
+            self.contains_pokemon = False
             return False
-
-
 class Trainer:
 
     def __init__(self, name):
         self.name = name
         self.belt = []
-# in for loop ro bezar toye init, wa apped ro negah dar toye take pokeball
-    def takePokeball(self):
-        for i in range(6):
-            charmander = Charmander("Charmander" + str(i))
-            pokeball = Pokeball(charmander)
 
-            self.belt.append(pokeball)
-            if len(self.belt) > 6:
-                print("You can't carry more than 6 pokeballs!")
-                self.belt.remove(Pokeball)
+    def takePokeball(self, pokeball):
+        try:
+            if len(self.belt) >= 6:
+                    raise Exception("You can't carry more than 6 pokeballs!")
+            else:
+                self.belt.append(pokeball)
+        except Exception as error:
+            print(error)
 
-    def throwPokeball(self, pokeball, gekeuste_charmander):
-        self.belt.remove(pokeball[gekeuste_charmander])
+    def throwPokeball(self):
+
         print("Pokeball is thrown!")
-        Pokeball.open()
+        pokeball = self.belt[0]
+        Pokeball.open(self.belt[0])
+        self.belt.remove(self.belt[0])
+        return pokeball
 
-#for loop maken in class for toevoegen van pokeballs aan de belt
-
-# class Throw:
-#     def __init__(self, belt):
-#         for pokeball in belt:
-#             belt.remove[0]
-#             return (pokeball)
-#
-#
-#
-# class Return:
-#     def __init__(self, belt, pokeball):
-#         belt.append(pokeball)
+    def returnPokeball(self, pokeball):
+        self.belt.append(pokeball)
