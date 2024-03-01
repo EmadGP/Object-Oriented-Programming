@@ -1,1 +1,1 @@
-# oop
+# School project Object oriented programming
