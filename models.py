@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 from data import *
 
 class Charmander:
@@ -8,26 +9,67 @@ class Charmander:
 
     def battle_cry(self):
         print(self.nickname + "!")
+=======
+import random
+from abc import ABC
+
+from data import *
+
+class Pokemon(ABC):
+    def __init__(self, nickname, strenght, weakness):
+        self.nickname = nickname
+        self.strenght = strenght
+        self.weakness = weakness
+
+    def battle_cry(self):
+        pass
+
+class Charmander(Pokemon):
+    def __init__(self, nickname):
+        super().__init__(nickname, "Fire", "Water")
+
+    def battle_cry(self):
+        print("Charmander!")
+
+class Squirtle(Pokemon):
+    def __init__(self, nickname):
+        super().__init__(nickname, "Water", "Leaf")
+
+    def battle_cry(self):
+        print("Squirtle!")
+
+class Bulbasaur(Pokemon):
+    def __init__(self, nickname):
+        super().__init__(nickname, "Grass", "Fire")
+
+    def battle_cry(self):
+        return print("Bulbasaur!")
+>>>>>>> Stashed changes
 
 
 class Pokeball:
-    def __init__(self, charmander):
-        self.charmander = charmander
-        self.contains_charmander = False
+    def __init__(self, pokemon):
+        self.pokemon = pokemon
+        self.contains_pokemon = False
 
     def open(self):
-        if self.charmander is not None:
+        if self.pokemon is not None:
             self.is_open = True
-            print("Charmander is released!")
-            return self.charmander.battle_cry()
+            print("Pokemon is released!")
+            return self.pokemon.battle_cry()
         else:
             print("Pokeball is empty!")
 
-    def close(self, charmander):
+    def close(self, pokemon):
         if self.is_open:
             print("Pokeball closes!")
             self.is_open = False
+<<<<<<< Updated upstream
             self.charmander = charmander
+=======
+            self.pokemon = pokemon
+
+>>>>>>> Stashed changes
         else:
             print("Pokeball is already closed!")
 
