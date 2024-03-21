@@ -3,7 +3,7 @@ pokemon_names = [
     'Charmander',
     'Bulbasaur',
     'Squirtle',
-    "Cloyster",
+    'Cloyster',
     'Jigglypuff',
     'Meowth',
     'Psyduck',
