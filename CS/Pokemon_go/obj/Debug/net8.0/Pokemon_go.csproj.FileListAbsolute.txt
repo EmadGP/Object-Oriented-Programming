@@ -1,0 +1,15 @@
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\bin\Debug\net8.0\Pokemon_go.exe
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\bin\Debug\net8.0\Pokemon_go.deps.json
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\bin\Debug\net8.0\Pokemon_go.runtimeconfig.json
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\bin\Debug\net8.0\Pokemon_go.dll
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\bin\Debug\net8.0\Pokemon_go.pdb
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\obj\Debug\net8.0\Pokemon_go.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\obj\Debug\net8.0\Pokemon_go.AssemblyInfoInputs.cache
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\obj\Debug\net8.0\Pokemon_go.AssemblyInfo.cs
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\obj\Debug\net8.0\Pokemon_go.csproj.CoreCompileInputs.cache
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\obj\Debug\net8.0\Pokemon_go.sourcelink.json
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\obj\Debug\net8.0\Pokemon_go.dll
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\obj\Debug\net8.0\refint\Pokemon_go.dll
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\obj\Debug\net8.0\Pokemon_go.pdb
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\obj\Debug\net8.0\Pokemon_go.genruntimeconfig.cache
+C:\Users\ehaji\OneDrive\Documents\davinci\Lerrjaar2\Object-oriented-programming\Object-Oriented-Programming\CS\Pokemon_go\obj\Debug\net8.0\ref\Pokemon_go.dll
